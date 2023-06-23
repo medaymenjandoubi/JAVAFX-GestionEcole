@@ -1,0 +1,28 @@
+.button {
+    -fx-effect: dropshadow(one-pass-box, black, 8, 0.0, 2, 0);
+    -fx-border-radius: 20;
+    -fx-font: bold 10pt "Arial";
+    -fx-background-color: #CCCCCC; /* Gris foncé */
+    -fx-text-fill: #0596ff; /* Bleu */
+}
+
+
+
+.label {
+    -fx-font-size: 18pt;
+    -fx-font: bold 10pt "Arial";
+    -fx-padding: 10;
+    -fx-text-fill: black; /* Noir */
+    -fx-effect: dropshadow(rgba(0, 0, 0, 0.5), 0, 0, 1, 1, 1); /* Effet d'ombrage */
+}
+
+#root {
+    -fx-background-color: #AED6F1; /* Bleu pastel */
+    -fx-alignment: center;
+    -fx-background-radius: 100;
+}
+
+#title {
+    -fx-font: bold 20pt "Arial";
+    -fx-effect: dropshadow(one-pass-box, #0596ff, 8, 0.0, 2, 0); /* Gris foncé */
+}

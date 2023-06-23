@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0"  stylesheets="@style.css" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.gui.DetailsCandidatController">
+   <children>
+      <Label layoutX="14.0" layoutY="116.0" text="Mail :" />
+      <Label layoutX="14.0" layoutY="49.0" text="Prénom" />
+      <Label layoutX="14.0" layoutY="82.0" text="Date de naissance :" />
+      <Label layoutX="14.0" layoutY="149.0" text="Tel :" />
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="0.0" prefWidth="41.0" text="Nom :" />
+      <Label fx:id="lbNom" layoutX="178.0" layoutY="14.0" text="Label" />
+      <Label fx:id="lbPrenom" layoutX="178.0" layoutY="49.0" text="Label" />
+      <Label fx:id="lbDateNaissance" layoutX="178.0" layoutY="82.0" text="Label" />
+      <Label fx:id="lbTel" layoutX="178.0" layoutY="149.0" text="Label" />
+      <Label fx:id="lbMail" layoutX="178.0" layoutY="116.0" text="Label" />
+   </children>
+</AnchorPane>

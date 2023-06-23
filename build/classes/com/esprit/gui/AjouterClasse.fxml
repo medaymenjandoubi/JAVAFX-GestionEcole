@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.gui.AjouterClasseController">
+   <children>
+      <TextField fx:id="tfNomClasse" layoutX="217.0" layoutY="133.0" />
+      <TextField fx:id="tfNombre" layoutX="218.0" layoutY="200.0" />
+      <TextField fx:id="tfNiveau" layoutX="217.0" layoutY="256.0" />
+      <Label layoutX="124.0" layoutY="139.0" text="Nom_Classe" />
+      <Label layoutX="111.0" layoutY="206.0" text="Nombre Eleve" />
+      <Label layoutX="159.0" layoutY="258.0" text="Niveau" />
+      <Button layoutY="539.0" mnemonicParsing="false" onAction="#modifierClasse" prefHeight="40.0" prefWidth="149.0" text="Modifier" />
+      <Button layoutY="374.0" mnemonicParsing="false" onAction="#ajouterClasse" prefHeight="40.0" prefWidth="149.0" text="Ajouter" />
+      <Button layoutX="-1.0" layoutY="458.0" mnemonicParsing="false" onAction="#supprimer" prefHeight="40.0" prefWidth="149.0" text="Supprimer" />
+      <TableView fx:id="TableClasse" layoutX="430.0" layoutY="-1.0" prefHeight="499.0" prefWidth="369.0">
+        <columns>
+          <TableColumn fx:id="C_nomclasse" prefWidth="127.0" text="Nom Classe" />
+          <TableColumn fx:id="c_nombre" prefWidth="119.0" text="Nombre" />
+            <TableColumn fx:id="c_niveau" minWidth="0.0" prefWidth="121.0" text="niveau" />
+        </columns>
+      </TableView>
+      <TextField fx:id="tfsearch" layoutX="382.0" layoutY="575.0" onAction="#chercher" />
+      <Button layoutX="349.0" layoutY="544.0" mnemonicParsing="false" text="Search" />
+      <Label layoutX="35.0" layoutY="14.0" text="GESTION DE CLASSE" textFill="#573232" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+       <Button fx:id="convertpdf" layoutX="679.0" layoutY="508.0" mnemonicParsing="false" onAction="#convertToPDF" text="ImprimerPDF" />
+      <Button layoutX="679.0" layoutY="555.0" mnemonicParsing="false" onAction="#ajoutersalle" prefHeight="31.0" prefWidth="107.0" text="Ajouter salle" />
+   </children>
+   <effect>
+      <ColorAdjust brightness="-0.02" contrast="-0.1" hue="-0.36" saturation="-0.02" />
+   </effect>
+</AnchorPane>
